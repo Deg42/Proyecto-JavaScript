@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script/imc.js"></script>
+    <script type="text/javascript" src="script/fcm.js"></script>
+    <script type="text/javascript" src="script/categoria.js"></script>
+    <script type="text/javascript" src="script/horario.js"></script>
+    <title>Utilidades</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.iesluisvelez.org/portal/" target="_blank"><img id="logo" src="/images/IES logo.png" /></a>
+
+        <table id="fecha">
+            <tr>
+                <td id="anyo"></td>
+            </tr>
+            <tr>
+                <td id="dia"></td>
+            </tr>
+            <tr>
+                <td id="mes"></td>
+            </tr>
+        </table>
+        <h1>Asociación Deportiva - Utilidades</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+    </nav>
+    <main>
+        <nav class="left">
+            <a href="javascript:mainImc()">Calculadora IMC</a>
+            <a href="javascript:mainFcm()">Calculadora FCM</a>
+            <a href="javascript:mainCategoria()">Calculadora de Categoría</a>
+            <a href="javascript:mainHorario()">Horario de la asociación</a>
+        </nav>
+
+        <section id="result">
+            <h2>Asociación Deportiva</h2>
+            <p>En esta página se encuentran las utilidades de la Asociaón Deportiva, tales como una calculadora de Índice de Masa Corporal, calculadora de Frecuencia Cardiáca Máxima, calculadora de Categoría Deportiva y el Horario de la Asociación.</p>
+        </section>
+    </main>
+    <footer>
+        <h5>Asociación Deportiva</h5>
+        <h6>Web desarrollada por Juan Antonio González Rivera </h6>
+        <div class="social-footer-icons">
+            <a href="https://www.instagram.com/deg42/" class="fa fa-instagram" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/jaglezriv/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://twitter.com/TheJ42117" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.reddit.com/user/TheJnT" class="fa fa-reddit" target="_blank"></a>
+            <a href="https://github.com/Deg42" class="fa fa-github" target="_blank"></a>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+    <script>
+        w3CodeColor();
+    </script>
+
+</body>
+
+</html>
