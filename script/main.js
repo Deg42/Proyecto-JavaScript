@@ -1,14 +1,9 @@
 //Fecha
 let date = new Date();
 
-const MESES_ANYO_ES = [
-    "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
-]
-
 document.getElementById("anyo").innerHTML = date.getFullYear()
 document.getElementById("dia").innerHTML = date.getDate()
-document.getElementById("mes").innerHTML = MESES_ANYO_ES[date.getMonth()]
+document.getElementById("mes").innerHTML = date.toLocaleDateString('es', { month: "long" }).toUpperCase()
 
 
 // Abrir PopUp
@@ -17,4 +12,4 @@ function popUpTimeOut() {
     open('popUp.html', 'PopUp', propiedades)
 }
 
-setTimeout(popUpTimeOut, 10000);
+// setTimeout(popUpTimeOut, 10000);
