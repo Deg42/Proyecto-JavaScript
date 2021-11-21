@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="icon" href="images/IES logo.png" type="image/x-icon">
+    <title>Contraseña</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h3 class="col-12 mt-2">Introduce una contraseña segura</h3>
+            <p>Para ello ha de tener las siguientes cualidades:</p>
+        </div>
+
+        <ul class="list-group mb-1">
+            <li class="test list-group-item" id="regexpCaracteres">Entre 8 y 16 caracteres</li>
+            <li class="test list-group-item" id="regexpMayus">Una letra mayúscula</li>
+            <li class="test list-group-item" id="regexpMinus">Una letra minúscula.</li>
+            <li class="test list-group-item" id="regexpNum">Un número</li>
+            <li class="test list-group-item" id="regexpEspecial">Uno de los siguientes caracteres: - _ @ # $ % &</li>
+        </ul>
+
+        <div id="validado"></div>
+
+        <form class="form-row my-2 align-items-center">
+            <div class="col-7 input-group">
+                <div class="input-group-text input-group-prepend" id="iconContrasenia" onclick="verContrasenia()"><i class="bi-eye"></i></div>
+                <input type="password" class="form-control" id="cod" placeholder="Contraseña">
+                <button type="button" class="btn btn-success" onclick="crearContrasenia()">Validar</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

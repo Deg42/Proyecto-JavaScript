@@ -5,73 +5,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
-
-    <title>Utilidades</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/IES logo.png" type="image/x-icon">
+    <title>Asociación Deportiva La Alcarrachela</title>
 </head>
 
 <body>
-
     <header class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row align-items-center my-2">
             <div class="col-2">
-                <a href="https://www.iesluisvelez.org/portal/" target="_blank"><img id="logo" src="/images/IES logo.png" /></a>
+                <a href="https://www.iesluisvelez.org/portal/" target="_blank"><img class="img-fluid" id="logo" src="images/IES logo.png" style="width: 12rem;" /></a>
             </div>
-            <div class="col-8 ">
-                <h1>Asociación Deportiva</h1>
+            <div class="col-8">
+                <h1>
+                    <a class="text-decoration-none text-reset" href="utilidades.html">
+                        Asociación Deportiva La Alcarrachela
+                    </a>
+                </h1>
             </div>
             <div class="col-2">
-                <table id="fecha">
-                    <tr>
-                        <td id="anyo"></td>
-                    </tr>
-                    <tr>
-                        <td id="dia"></td>
-                    </tr>
-                    <tr>
-                        <td id="mes"></td>
-                    </tr>
-                </table>
+                <div id="fecha" class="card">
+                    <ul class="list-group list-group-flush">
+                        <li id="anyo" class="list-group-item">Cras justo odio</li>
+                        <li id="dia" class="list-group-item">Dapibus ac facilisis in</li>
+                        <li id="mes" class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-    </nav>
-    <main>
-        <nav class="left">
-            <a href="javascript:mainImc()">Calculadora IMC</a>
-            <a href="javascript:mainFcm()">Calculadora FCM</a>
-            <a href="javascript:mainCategoria()">Calculadora de Categoría</a>
-            <a href="javascript:mainHorario()">Horario de la asociación</a>
-        </nav>
+    <nav class="navbar ">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
 
-        <section id="result">
-            <h2>Asociación Deportiva</h2>
-            <p>En esta página se encuentran las utilidades de la Asociaón Deportiva, tales como una calculadora de Índice de Masa Corporal, calculadora de Frecuencia Cardiáca Máxima, calculadora de Categoría Deportiva y el Horario de la Asociación.</p>
-        </section>
-    </main>
-    <footer class="container-fluid">
+        </ul>
+    </nav>
+
+    <main class="container-fluid">
         <div class="row">
-            <div class="col-3 align-self-center text-center">
-                <h5 class="mb-0">Asociación Deportiva</h5>
-            </div>
-            <div class="col-3 align-self-center text-center">
-                <a href="avisoLegal.hmtl">Aviso Legal</a>
-            </div>
-            <div class="col-3 align-self-center text-center">
-                <h6 class="mb-0">Web desarrollada por Juan Antonio González Rivera </h6>
-            </div>
-            <div class="col-3 align-self-center text-center">
-                <a class="bi-instagram fa-2x icon-white" href="https://www.instagram.com/deg42/" target="_blank"></a>
-                <a class="bi-linkedin fa-2x icon-white" href="https://www.linkedin.com/in/jaglezriv/" target="_blank"></a>
-                <a class="bi-twitter fa-2x icon-white" href="https://twitter.com/TheJ42117" target="_blank"></a>
-                <a class="bi-reddit fa-2x icon-white" href="https://www.reddit.com/user/TheJnT" target="_blank"></a>
-                <a class="bi-github fa-2x icon-white" href="https://github.com/Deg42" target="_blank"></a>
+            <nav class="col-2 d-block sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:mainImc()">Calculadora IMC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:mainFcm()">Calculadora FCM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:mainCategoria()">Calculadora de Categoría</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:mainHorario()">Horario de la asociación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:abrirContrasenia()">Crear contraseña</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="col-10 pb-5" id="result">
+                <h2 class="text-center">Bienvenido a nuestra web</h2>
+                <p>En esta página se encuentran las utilidades de la Asociación Deportiva La Alcarrachela, tales como una calculadora de Índice de Masa Corporal, calculadora de Frecuencia Cardiáca Máxima, calculadora de Categoría Deportiva y el Horario de
+                    la Asociación.</p>
+                <div class="container">
+                    <div class="row">
+                        <img class="col-8 rounded mb-4" src="images/ecijaBasket.jpg">
+                        <img class="col-4 rounded mb-4" src="images/cartel.jpg">
+                    </div>
+                    <div class="row">
+                        <img class="col-7 rounded mb-4" src="images/pabellonInterior.jpeg">
+                        <img class="col-5 rounded mb-4" src="images/pabellonExterior.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 align-self-center text-center">
+                    <!-- TODO: Poner IR ARRIBA -->
+                    <h5 class="mb-0 "><a class="text-decoration-none text-reset" href="utilidades.html"> Asociación Deportiva
+                        <br />La Alcarrachela</a></h5>
+                </div>
+                <div class="col-4 btn-group align-self-center text-center">
+                    <a class="btn btn-lg btn-block footer-btn" href="avisoLegal.html" target="_blank">Aviso Legal</a>
+                    <a class="btn btn-lg btn-block footer-btn" onclick="alert('De momento no hay galletas ni soporte para dispositivos móviles!');" target="_blank">Política de Cookies</a>
+                </div>
+                <div class="col-2 align-self-center text-center">
+                    <h6 class="mb-0 fst-italic">Web desarrollada por</h6>
+                    <h6 class="mb-0 fst-italic">Juan Antonio González Rivera</h6>
+                </div>
+                <div class="col-4 btn-group my-2 ">
+                    <a class="bi-instagram fs-2 btn btn-instagram" href="https://www.instagram.com/deg42/" target="_blank"></a>
+                    <a class="bi-linkedin fs-2 btn btn-linkedIn" href="https://www.linkedin.com/in/jaglezriv/" target="_blank"></a>
+                    <a class="bi-twitter fs-2 btn btn-twitter" href="https://twitter.com/TheJ42117" target="_blank"></a>
+                    <a class="bi-reddit fs-2 btn btn-reddit" href="https://www.reddit.com/user/TheJnT" target="_blank"></a>
+                    <a class="bi-github fs-2 btn btn-gitHub" href="https://github.com/Deg42" target="_blank"></a>
+                </div>
             </div>
         </div>
     </footer>
@@ -79,12 +116,8 @@
     <script type="text/javascript" src="script/fcm.js"></script>
     <script type="text/javascript" src="script/categoria.js"></script>
     <script type="text/javascript" src="script/horario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="script/main.js"></script>
-    <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
-    <script>
-        w3CodeColor();
-    </script>
-
 </body>
 
 </html>

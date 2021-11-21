@@ -1,29 +1,5 @@
-section {
-    padding: 10px;
-}
-
-span.bold {
-    font-weight: bold;
-}
-
-span.italic {
-    font-style: italic;
-}
-
-h1 {
-    vertical-align: middle;
-}
-
-h2 {
-    text-align: center;
-}
-
 h4 {
     margin-left: 20px;
-}
-
-img {
-    width: 150px;
 }
 
 code {
@@ -48,6 +24,9 @@ div.w3-code.cssHigh.notranslate {
     border-left: 3px solid #F76D16;
 }
 
+
+/* TODO - Eliminar esta sección */
+
 table.horario {
     text-align: center;
     border-collapse: collapse;
@@ -61,152 +40,168 @@ table.horario th {
 
 table.horario th,
 table.horario td {
-    border: 3px solid black;
+    border: 3px solid #000000;
 }
 
 
-/* Style the header */
+/* ---------------------------- */
+
+
+/* Header */
 
 header {
     padding: 4px;
-    background-color: #ffff00;
+    background-color: #ff7f50;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5em;
-    display: inline-block;
-}
-
-table#fecha {
+div#fecha {
     font-weight: bold;
-    background-color: green;
 }
 
-table#fecha,
-table#fecha td {
-    border-collapse: collapse;
-    border: 3px solid gray;
-    color: white;
-    padding: 5px;
-}
-
-table#fecha td#anyo {
+div#fecha li#anyo {
     letter-spacing: 0.25em;
+    background-color: #fac852;
 }
 
-table#fecha td#dia {
+div#fecha li#dia {
     font-size: 2em;
-    color: black;
-    background-color: #6ebd00
+    background-color: white;
 }
 
-table#fecha td#mes {
+div#fecha li#mes {
     font-size: 0.9em;
+    background-color: #6699dc;
+    color: white;
 }
 
 
-/* Style the top navigation bar */
+/* Nav Bars */
 
-nav {
-    overflow: hidden;
-    background-color: #0085e2;
+.navbar {
+    padding: 0;
+    background-color: #F8936E;
 }
 
+.sidebar {
+    background-color: #90D7FF;
+}
 
-/* Style the topnav links */
+.nav-item {
+    font-size: 1.2em;
+    font-weight: 500;
+}
 
-nav a {
-    float: left;
+.nav-link {
     display: block;
-    color: #f2f2f2;
-    text-align: center;
+    padding: .5rem 1rem;
+    color: #222;
     padding: 14px 16px;
     text-decoration: none;
 }
 
+.nav-link:hover {
+    background-color: #F7B28F;
+    color: white;
+}
 
-/* Change color on hover */
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
+.sidebar .nav-link:hover {
+    background-color: #0072BB;
+    color: white;
 }
 
 
-/* Create three unequal columns that floats next to each other */
+/* App Results */
 
 #result {
+    padding: 30px;
     overflow-x: scroll;
 }
 
-
-/* Left nav */
-
-nav.left {
-    border-bottom: 2px solid #0085e2;
-    border-right: 2px solid #0085e2;
-    float: left;
-    background-color: #ffff00;
-    width: 25%;
-}
-
-nav.left a {
-    text-align: left;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    width: 100%;
-}
-
-nav.left a:hover {
-    background-color: #0085e2;
-}
-
-
-/* Result column */
-
-section#result {
-    padding: 30px;
-    width: 75%;
-}
-
-section#result table {
+#result table {
     border-collapse: collapse;
 }
 
-section#result tr td {
+#result tr td {
     padding: 3px;
-    border: 3px solid black;
+    border: 3px solid #000000;
 }
 
 
-/* Style the footer */
+/* Footer */
 
-footer {
-    background-color: #f76d16;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    overflow: auto;
-    clear: both;
-    width: 100%;
-    margin-bottom: 0
+.footer {
+    background-color: #ff7f50;
 }
 
-h6 {
-    font-style: italic;
+.footer-btn {
+    background-color: #90D7FF;
 }
 
-p.copyright {
-    margin: 10px;
-    font-size: 0.75em;
-    color: lightgray;
-    bottom: 0;
-    float: left;
-}
-
-.icon-white {
+.footer-btn:hover {
+    background-color: #0072BB;
     color: white;
+}
+
+
+/* Icons */
+
+.btn-instagram {
+    color: #fff;
+    background-color: #bc2a8d;
+    border-color: #bc2a8d;
+}
+
+.btn-instagram:hover {
+    color: #fff;
+    background-color: #a8267f;
+    border-color: #a8267f;
+}
+
+.btn-linkedIn {
+    color: #fff;
+    background-color: #0e76a8;
+    border-color: #0e76a8;
+}
+
+.btn-linkedIn:hover {
+    color: #fff;
+    background-color: #0a658f;
+    border-color: #0a658f;
+}
+
+.btn-reddit {
+    color: #fff;
+    background-color: #FF5700;
+    border-color: #FF5700;
+}
+
+.btn-reddit:hover {
+    color: #fff;
+    background-color: #bb4104;
+    border-color: #bb4104;
+}
+
+.btn-gitHub {
+    color: #fff;
+    background-color: #219741;
+    border-color: #219741;
+}
+
+.btn-gitHub:hover {
+    color: #fff;
+    background-color: #15662b;
+    border-color: #15662b;
+}
+
+.btn-twitter {
+    color: #fff;
+    background-color: #1DA1F2;
+    border-color: #1DA1F2;
+}
+
+.btn-twitter:hover {
+    color: #fff;
+    background-color: #1989ce;
+    border-color: #1989ce;
 }
