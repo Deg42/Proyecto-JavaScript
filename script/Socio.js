@@ -1,46 +1,44 @@
-class Socio {
-    static numSocios = []
+const socios = []
 
-    constructor() {
-        this.num = ""
-        this.dni = ""
-        this.nombre = ""
-        this.apellidos = ""
-        this.fechaNacimiento = ""
-        this.localidad = ""
-    }
+function Socio(num, dni, nombre, apellidos, fechaNacimiento, localidad) {
+    this.num = num
+    this.dni = dni
+    this.nombre = nombre
+    this.apellidos = apellidos
+    this.fechaNacimiento = fechaNacimiento
+    this.localidad = localidad
+}
 
-    altaSocio(num, dni, nombre, apellidos, fechaNacimiento, localidad) {
-        this.num = num
-        this.dni = dni
-        this.nombre = nombre
-        this.apellidos = apellidos
-        this.fechaNacimiento = fechaNacimiento
-        this.localidad = localidad
-        Socio.numSocios.push(this)
-    }
+function altaSocio(dni, nombre, apellidos, fechaNacimiento, localidad) {
+    let socio = new Socio(socios.length + 1, dni, nombre, apellidos, fechaNacimiento, localidad)
+    socios.push(socio)
+}
 
-    bajaSocio() {
-        Socio.numSocios.splice(this, 1);
-    }
+function bajaSocioNum(, num) {
+    array.splice(socios.indexOf(socios.find(socio => socio.num == num)), 1);
+}
 
-    modificarLocalidad(localidad) {
-        this.localidad = localidad
-    }
+function bajaSocioDni(dni) {
+    array.splice(socios.indexOf(socios.find(socio => socio.dni == dni)), 1);
+}
 
-    static mostrarSocios() {
-        return numSocios
-    }
+function modificarLocalidad(dni, nuevalocalidad) {
+    let modificar = socios.find(socio => socio.dni == dni)
+    modificar.localidad = nuevalocalidad
+}
 
-    // static buscarSocioDni(dni) {}
-    // static buscarSocioCategoria() {}
+function mostrarSocios() {
 
-    static mostrarSociosLocalidad(localidad) {
-        let socios = numSocios.filter(socio => socio.localidad = localidad)
-        if (socios) {
-            return alert(socios)
-        } else {
-            return alert("No hay")
-        }
+}
+
+// buscarSocioDni(dni) {}
+// buscarSocioCategoria() {}
+
+function mostrarSociosLocalidad(localidad) {
+    let socios = numSocios.filter(socio => socio.localidad == localidad)
+    if (socios) {
+        return alert(socios)
+    } else {
+        return alert("No hay")
     }
 }
