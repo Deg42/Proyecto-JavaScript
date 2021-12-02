@@ -20,7 +20,7 @@
             </div>
             <div class="col-8">
                 <h1>
-                    <a class="text-decoration-none text-reset" href="utilidades.html">
+                    <a class="text-decoration-none text-reset" href="asociacion.html">
                         Asociación Deportiva La Alcarrachela
                     </a>
                 </h1>
@@ -56,13 +56,13 @@
                                   Gestión de Usuarios
                                 </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Alta de un nuevo socio</a></li>
-                                <li><a class="dropdown-item" href="#">Baja de un socio</a></li>
-                                <li><a class="dropdown-item" href="#">Modificar la localidad del socio</a></li>
-                                <li><a class="dropdown-item" href="#">Mostrar todos los socios</a></li>
-                                <li><a class="dropdown-item" href="#">Buscar un socio</a></li>
-                                <li><a class="dropdown-item" href="#">Buscar todos los socios de una categoría</a></li>
-                                <li><a class="dropdown-item" href="#">Lista con todos los socios de esa localidad</a></li>
+                                <li><a class="dropdown-item" href="javascript:altaSocio()">Alta de un nuevo socio</a></li>
+                                <li><a class="dropdown-item" href="javascript:bajaSocio()">Baja de un socio</a></li>
+                                <li><a class="dropdown-item" href="javascript:modificarLocalidad()">Modificar la localidad del socio</a></li>
+                                <li><a class="dropdown-item" href="javascript:mostrarSocios()">Mostrar todos los socios</a></li>
+                                <!-- <li><a class="dropdown-item" href="javascript:bajaSocio()">Buscar un socio</a></li>
+                                <li><a class="dropdown-item" href="javascript:bajaSocio()">Buscar todos los socios de una categoría</a></li> -->
+                                <li><a class="dropdown-item" href="javascript:mostrarSociosLocalidad()">Lista con todos los socios de esa localidad</a></li>
                             </ul>
 
                         </li>
@@ -80,9 +80,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="javascript:abrirContrasenia()">Crear contraseña</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:mostrarSociosLocalidad(Écija)">Mostrar Localidad</a>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +132,7 @@
     <script type="text/javascript" src="script/categoria.js"></script>
     <script type="text/javascript" src="script/horario.js"></script>
     <script src="script/main.js"></script>
-    <script src="script/Socio.js"></script>
+    <script src="script/socios.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
